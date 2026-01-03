@@ -16,6 +16,9 @@ IMG_HEIGHT = 50
 class EgisDriver:
     def __init__(self):
         self.dev = self._find_device()
+        # Copied from continuous_driver: Give it time to boot after set_configuration
+        print("[DRIVER] Device found. Waiting 1.0s for stability...")
+        time.sleep(1.0) 
         self._initialize_sensor()
     
     def _find_device(self):
@@ -36,14 +39,15 @@ class EgisDriver:
             self.dev.write(ENDPOINT_OUT, cmd)
             if read_resp:
                 return self.dev.read(ENDPOINT_IN, 64, timeout=1000)
-        except usb.core.USBError:
+        except usb.core.USBError as e:
+            print(f"[DRIVER] USB Error sending {hex_str}: {e}")
             pass
         return None
 
     def _initialize_sensor(self):
-        """Runs the boot sequence once on startup."""
-        print("[DRIVER] Initializing Hardware...")
-        # (Shortened for readability - same hex codes as your working script)
+        print("[DRIVER] Initializing Hardware Sequence...")
+        
+        # 1. Factory Reset & Patching
         patches = [
             "45 47 49 53 60 00 06", "45 47 49 53 60 01 06", "45 47 49 53 60 40 06",
             "45 47 49 53 61 0a f4", "45 47 49 53 61 0c 44", "45 47 49 53 61 40 00",
@@ -52,16 +56,27 @@ class EgisDriver:
         ]
         for p in patches: self._send_hex(p)
         
-        # Unlock
+        # 2. Unlock
         self._send_hex("45 47 49 53 60 00 fc")
         self._send_hex("45 47 49 53 60 01 fc")
         self._send_hex("45 47 49 53 60 41 fc")
 
-        # Init Blob (Simplified for length - insert your full init list here)
-        self._send_hex("45 47 49 53 97 00 00")
-        # ... Insert the rest of your init_cmds here ...
+        # 3. Init Blob
+        init_cmds = [
+            "45 47 49 53 97 00 00",
+            "45 47 49 53 60 00 00", "45 47 49 53 60 00 00", "45 47 49 53 60 00 00",
+            "45 47 49 53 60 00 00", "45 47 49 53 60 00 00",
+            "45 47 49 53 60 01 00", "45 47 49 53 61 0a fd", "45 47 49 53 61 35 02",
+            "45 47 49 53 61 80 00", "45 47 49 53 60 80 00", "45 47 49 53 61 0a fc",
+            "45 47 49 53 63 01 02 0f 03", "45 47 49 53 61 0c 22", "45 47 49 53 61 09 83",
+            "45 47 49 53 63 26 06 06 60 06 05 2f 06", "45 47 49 53 61 0a f4",
+            "45 47 49 53 61 0c 44", "45 47 49 53 61 50 03", "45 47 49 53 60 50 03",
+        ]
+        for c in init_cmds: 
+            self._send_hex(c)
+            time.sleep(0.002)
         
-        # Final Setup
+        # 4. Final Setup
         final_cmds = [
             "45 47 49 53 60 40 ec", "45 47 49 53 61 0c 22", "45 47 49 53 61 0b 03",
             "45 47 49 53 61 0a fc", "45 47 49 53 60 40 fc",
@@ -74,49 +89,46 @@ class EgisDriver:
         print("[DRIVER] Hardware Ready.")
 
     def _rearm(self):
-        """Prepares sensor for a SINGLE shot."""
-        self._send_hex("45 47 49 53 61 2d 20") # Reset Prep
-        self._send_hex("45 47 49 53 60 00 20") # HW Reset
-        self._send_hex("45 47 49 53 60 01 20") # Mode Check
-        self._send_hex("45 47 49 53 63 2c 02 00 57") # Config
-        self._send_hex("45 47 49 53 60 2d 02") # Status
-        self._send_hex("45 47 49 53 62 67 03") # Calib Check
-        self._send_hex("45 47 49 53 63 2c 02 00 13") # Wake
-        self._send_hex("45 47 49 53 60 00 02") # Ready
+        self._send_hex("45 47 49 53 61 2d 20")
+        self._send_hex("45 47 49 53 60 00 20")
+        self._send_hex("45 47 49 53 60 01 20")
+        self._send_hex("45 47 49 53 63 2c 02 00 57")
+        self._send_hex("45 47 49 53 60 2d 02")
+        self._send_hex("45 47 49 53 62 67 03")
+        self._send_hex("45 47 49 53 63 2c 02 00 13")
+        self._send_hex("45 47 49 53 60 00 02")
 
     def capture_frame(self, timeout_sec=10):
-        """
-        Polls the sensor until a finger is detected OR timeout expires.
-        Returns: bytes (raw image) or None
-        """
         start_time = time.time()
         
         while (time.time() - start_time) < timeout_sec:
-            # 1. Arm
             self._rearm()
-            
-            # 2. Trigger
             self.dev.write(ENDPOINT_OUT, bytes.fromhex("45 47 49 53 64 14 ec"))
             
             try:
-                # 3. Read
-                data = self.dev.read(ENDPOINT_IN, 10000, timeout=100)
+                # Use the longer timeout from your working script
+                data = self.dev.read(ENDPOINT_IN, 10000, timeout=1500)
                 
-                # Drain metadata
-                try: self.dev.read(ENDPOINT_IN, 512, timeout=20)
+                try: self.dev.read(ENDPOINT_IN, 512, timeout=50)
                 except: pass
 
                 if len(data) > 5000:
-                    # Check Contrast to see if it's a real finger or just noise
-                    # (Simple math, no OpenCV needed here for speed)
-                    arr = np.array(list(data[:IMG_WIDTH*IMG_HEIGHT]), dtype=np.uint8)
-                    if np.std(arr) > 5.0:
-                        return data # SUCCESS: Found a finger!
+                    # Pad/Trim logic
+                    target = IMG_WIDTH * IMG_HEIGHT
+                    if len(data) < target: data += bytes(target - len(data))
+                    else: data = data[:target]
+
+                    # DEBUGGING: Print stats for every captured frame
+                    arr = np.array(list(data), dtype=np.uint8)
+                    contrast = np.std(arr)
+                    print(f"[DEBUG] Read {len(data)} bytes. Contrast: {contrast:.2f}")
+
+                    if contrast > 5.0:
+                        print("[DEBUG] >>> FINGER ACCEPTED <<<")
+                        return data
             
             except usb.core.USBError:
+                # print("[DEBUG] USB Timeout (No finger?)")
                 pass
             
-            # Wait a tiny bit before polling again to be nice to CPU
-            time.sleep(0.05)
-            
-        return None # Timed out
+        return None
