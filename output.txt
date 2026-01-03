@@ -1,0 +1,20 @@
+● polkit.service - Authorization Manager
+     Loaded: loaded (/usr/lib/systemd/system/polkit.service; static)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: active (running) since Sat 2026-01-03 00:11:14 CST; 5min ago
+ Invocation: 0520b6986cd7408994938ee049eb2e5e
+       Docs: man:polkit(8)
+   Main PID: 41534 (polkitd)
+     Status: "Processing requests..."
+      Tasks: 4 (limit: 18053)
+     Memory: 5.1M (peak: 8.9M)
+        CPU: 685ms
+     CGroup: /system.slice/polkit.service
+             └─41534 /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+
+Jan 03 00:11:13 finch systemd[1]: Starting polkit.service - Authorization Manager...
+Jan 03 00:11:14 finch polkitd[41534]: Started polkitd version 126
+Jan 03 00:11:14 finch systemd[1]: Started polkit.service - Authorization Manager.
+Jan 03 00:11:51 finch polkitd[41534]: Operator of unix-session:2 FAILED to authenticate to gain authorization for action net.reactivated.fprint.device.enroll for system-bus-name::1.2068 [<unknown>] (owned by unix-user:jayabbhi)
+Jan 03 00:12:15 finch polkitd[41534]: Operator of unix-session:2 FAILED to authenticate to gain authorization for action org.gnome.controlcenter.user-accounts.administration for unix-process:40744:5164960 [/usr/bin/gnome-control-center system users] (owned by unix-user:jayabbhi)

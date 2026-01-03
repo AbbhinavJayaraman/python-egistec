@@ -33,7 +33,8 @@ class FingerprintMatcher:
         
         if descriptors_list:
             safe_name = name.replace("/", "_") # Sanitize
-            np.save(os.path.join(self.enroll_dir, f"{safe_name}.npy"), descriptors_list)
+            dtype_obj = np.array(descriptors_list, dtype=object)
+            np.save(os.path.join(self.enroll_dir, f"{safe_name}.npy"), dtype_obj)
             print(f"[MATCHER] Enrolled: {safe_name}")
             return True
         return False
