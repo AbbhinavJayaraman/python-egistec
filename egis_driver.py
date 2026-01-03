@@ -2,8 +2,6 @@ import usb.core
 import usb.util
 import time
 import numpy as np
-import os
-import sys
 
 # --- Hardware Constants ---
 VENDOR_ID = 0x1c7a
@@ -16,9 +14,8 @@ IMG_HEIGHT = 50
 class EgisDriver:
     def __init__(self):
         self.dev = self._find_device()
-        # Copied from continuous_driver: Give it time to boot after set_configuration
-        print("[DRIVER] Device found. Waiting 1.0s for stability...")
-        time.sleep(1.0) 
+        # Tuned values from your interactive_scan_test.py
+        self.touch_threshold = 31.0 
         self._initialize_sensor()
     
     def _find_device(self):
@@ -39,15 +36,12 @@ class EgisDriver:
             self.dev.write(ENDPOINT_OUT, cmd)
             if read_resp:
                 return self.dev.read(ENDPOINT_IN, 64, timeout=1000)
-        except usb.core.USBError as e:
-            print(f"[DRIVER] USB Error sending {hex_str}: {e}")
+        except usb.core.USBError:
             pass
         return None
 
     def _initialize_sensor(self):
-        print("[DRIVER] Initializing Hardware Sequence...")
-        
-        # 1. Factory Reset & Patching
+        print("[DRIVER] Initializing Hardware...")
         patches = [
             "45 47 49 53 60 00 06", "45 47 49 53 60 01 06", "45 47 49 53 60 40 06",
             "45 47 49 53 61 0a f4", "45 47 49 53 61 0c 44", "45 47 49 53 61 40 00",
@@ -56,12 +50,10 @@ class EgisDriver:
         ]
         for p in patches: self._send_hex(p)
         
-        # 2. Unlock
         self._send_hex("45 47 49 53 60 00 fc")
         self._send_hex("45 47 49 53 60 01 fc")
         self._send_hex("45 47 49 53 60 41 fc")
 
-        # 3. Init Blob
         init_cmds = [
             "45 47 49 53 97 00 00",
             "45 47 49 53 60 00 00", "45 47 49 53 60 00 00", "45 47 49 53 60 00 00",
@@ -76,7 +68,6 @@ class EgisDriver:
             self._send_hex(c)
             time.sleep(0.002)
         
-        # 4. Final Setup
         final_cmds = [
             "45 47 49 53 60 40 ec", "45 47 49 53 61 0c 22", "45 47 49 53 61 0b 03",
             "45 47 49 53 61 0a fc", "45 47 49 53 60 40 fc",
@@ -89,6 +80,7 @@ class EgisDriver:
         print("[DRIVER] Hardware Ready.")
 
     def _rearm(self):
+        # The critical sequence from your working test
         self._send_hex("45 47 49 53 61 2d 20")
         self._send_hex("45 47 49 53 60 00 20")
         self._send_hex("45 47 49 53 60 01 20")
@@ -98,37 +90,38 @@ class EgisDriver:
         self._send_hex("45 47 49 53 63 2c 02 00 13")
         self._send_hex("45 47 49 53 60 00 02")
 
-    def capture_frame(self, timeout_sec=10):
-        start_time = time.time()
+    def get_live_frame(self):
+        """
+        Performs ONE atomic capture cycle: Rearm -> Trigger -> Read -> Contrast.
+        Returns: (image_data, contrast_value)
+        If no data read (USB error), returns (None, 0.0)
+        """
+        self._rearm()
+        self.dev.write(ENDPOINT_OUT, bytes.fromhex("45 47 49 53 64 14 ec"))
         
-        while (time.time() - start_time) < timeout_sec:
-            self._rearm()
-            self.dev.write(ENDPOINT_OUT, bytes.fromhex("45 47 49 53 64 14 ec"))
-            
-            try:
-                # Use the longer timeout from your working script
-                data = self.dev.read(ENDPOINT_IN, 10000, timeout=1500)
+        try:
+            data = self.dev.read(ENDPOINT_IN, 10000, timeout=1500)
+            # Drain pipe
+            try: self.dev.read(ENDPOINT_IN, 512, timeout=20)
+            except: pass
+
+            if len(data) > 5000:
+                target = IMG_WIDTH * IMG_HEIGHT
+                if len(data) < target: 
+                    data += bytes(target - len(data))
+                else: 
+                    data = data[:target]
                 
-                try: self.dev.read(ENDPOINT_IN, 512, timeout=50)
-                except: pass
-
-                if len(data) > 5000:
-                    # Pad/Trim logic
-                    target = IMG_WIDTH * IMG_HEIGHT
-                    if len(data) < target: data += bytes(target - len(data))
-                    else: data = data[:target]
-
-                    # DEBUGGING: Print stats for every captured frame
-                    arr = np.array(list(data), dtype=np.uint8)
-                    contrast = np.std(arr)
-                    print(f"[DEBUG] Read {len(data)} bytes. Contrast: {contrast:.2f}")
-
-                    if contrast > 5.0:
-                        print("[DEBUG] >>> FINGER ACCEPTED <<<")
-                        return data
+                arr = np.array(list(data), dtype=np.uint8)
+                contrast = np.std(arr)
+                return data, contrast
+                
+        except usb.core.USBError:
+            pass
             
-            except usb.core.USBError:
-                # print("[DEBUG] USB Timeout (No finger?)")
-                pass
-            
-        return None
+        return None, 0.0
+
+    def check_sensor_clear(self):
+        """Returns True if sensor is empty (contrast < threshold)"""
+        _, contrast = self.get_live_frame()
+        return contrast < self.touch_threshold

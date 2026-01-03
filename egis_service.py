@@ -7,14 +7,10 @@ from gi.repository import GLib
 from pydbus import SystemBus
 from pydbus.generic import signal
 
-# --- MODULES ---
-# Ensure we can import from the current directory
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from egis_driver import EgisDriver
 from fingerprint_matcher import FingerprintMatcher 
 
-# --- DBUS XML DEFINITION ---
-# We use .strip() to ensure NO whitespace exists before <node>
 XML_INTERFACE = """<node>
   <interface name="io.github.uunicorn.Fprint.Device">
     <method name="Claim">
@@ -56,83 +52,83 @@ XML_INTERFACE = """<node>
 """
 
 class EgisService:
-
-    # Force removal of newlines at start/end
     dbus = XML_INTERFACE.strip()
-
-    # --- ADD THESE LINES ---
     VerifyStatus = signal()
     VerifyFingerSelected = signal()
     EnrollStatus = signal()
 
     def __init__(self):
-        print("[Service] Initializing Hardware...")
-        # Verify XML is clean
-        if not self.dbus.startswith("<node>"):
-            print(f"[CRITICAL] XML format error! Starts with: {repr(self.dbus[:10])}")
-            sys.exit(1)
-
+        print("[Service] Initializing...")
         try:
             self.driver = EgisDriver()
         except Exception as e:
-            print(f"[Error] Failed to initialize driver: {e}")
+            print(f"[Fatal] Driver Init Failed: {e}")
             sys.exit(1)
             
-        storage_path = "/var/lib/open-fprintd/egis"
-        self.matcher = FingerprintMatcher(enroll_dir=storage_path)
-        
+        self.matcher = FingerprintMatcher(enroll_dir="/var/lib/open-fprintd/egis")
         self.scan_thread = None
         self.cancel_scan = False
-        self.claimed_user = None
 
-    def Claim(self, username):
-        print(f"[Service] Claimed by {username}")
-        self.claimed_user = username
-
-    def Release(self):
+    # --- DBus Methods ---
+    def Claim(self, username): print(f"[Service] Claimed by {username}")
+    def Release(self): 
         print("[Service] Released")
-        self._stop_scan_thread()
-        self.claimed_user = None
+        self.Cancel()
 
-    def ListEnrolledFingers(self, username):
-        print(f"[Service] Listing fingers for {username}")
-        fingers = self.matcher.get_enrolled_fingers(username)
-        print(f" -> Found: {fingers}")
-        return fingers
-
-    def DeleteEnrolledFingers(self, username):
-        print(f"[Service] Deleting fingers for {username}")
-        self.matcher.delete_user_fingers(username)
+    def ListEnrolledFingers(self, username): return self.matcher.get_enrolled_fingers(username)
+    def DeleteEnrolledFingers(self, username): self.matcher.delete_user_fingers(username)
 
     def VerifyStart(self, username, finger_name):
-        print(f"[Service] Verify requested for {username}")
-        self._start_thread(self._verify_loop, (username, finger_name))
+        print(f"[Service] VerifyStart: {username}")
+        self._start_thread(self._verify_loop, (username,))
 
     def EnrollStart(self, username, finger_name):
-        print(f"[Service] Enroll requested for {username} (finger: {finger_name})")
+        print(f"[Service] EnrollStart: {username}")
         self._start_thread(self._enroll_loop, (username, finger_name))
 
     def Cancel(self):
-        print("[Service] Cancel requested")
-        self._stop_scan_thread()
+        print("[Service] Cancelling...")
+        self.cancel_scan = True
+        if self.scan_thread and self.scan_thread.is_alive():
+            self.scan_thread.join(timeout=2.0)
 
-    def _verify_loop(self, username, finger_name):
-        print("[Verify] Starting loop...")
+    # --- Worker Loops ---
+    def _wait_for_lift(self):
+        """Helper to block until finger is removed, ensuring clean state."""
+        print("[Flow] Waiting for finger lift...")
         while not self.cancel_scan:
-            frame = self.driver.capture_frame(timeout_sec=0.5)
-            if frame:
-                match_name, score = self.matcher.verify_finger(frame)
-                expected_prefix = f"{username}_"
+            if self.driver.check_sensor_clear():
+                print("[Flow] Sensor clear.")
+                return True
+            time.sleep(0.1)
+        return False
+
+    def _verify_loop(self, username):
+        # 1. Ensure sensor is clear before starting
+        if not self._wait_for_lift(): return
+
+        print("[Verify] Waiting for touch...")
+        while not self.cancel_scan:
+            # Poll for frame
+            data, contrast = self.driver.get_live_frame()
+            
+            if data and contrast > self.driver.touch_threshold:
+                print(f"[Verify] Touch detected (Contrast: {contrast:.2f})")
                 
-                if match_name and match_name.startswith(expected_prefix) and score > 15:
-                    print(f"MATCH! Finger: {match_name}, Score: {score}")
+                # Perform Match
+                match_name, score = self.matcher.verify_finger(data)
+                
+                if match_name and match_name.startswith(f"{username}_") and score > 15:
+                    print(f"[Verify] MATCH! Score: {score}")
                     self.VerifyStatus("verify-match", True)
-                    return
-                elif match_name:
-                     print(f"Mismatch: Saw {match_name} but wanted {username}")
-                     self.VerifyStatus("verify-no-match", False)
+                    return # Success!
                 else:
+                    print(f"[Verify] No match. Score: {score}")
                     self.VerifyStatus("verify-no-match", False)
+                    # Important: Wait for lift before retrying so we don't spam "No Match"
+                    if not self._wait_for_lift(): return
+            
+            # Reduce CPU usage slightly
             time.sleep(0.01)
 
     def _enroll_loop(self, username, finger_name):
@@ -140,46 +136,56 @@ class EgisService:
         completed = 0
         samples = []
 
-        print(f"[Enroll] Starting enrollment for {finger_name}...")
+        # 1. Ensure sensor is clear
+        if not self._wait_for_lift(): return
+
+        print(f"[Enroll] Starting {STAGES} stages...")
+        
         while completed < STAGES and not self.cancel_scan:
-            print(f"[Enroll] Waiting for finger (Stage {completed+1})...")
-            frame = self.driver.capture_frame(timeout_sec=2.0)
-            if frame:
-                samples.append(frame)
-                completed += 1
-                print(f"[Enroll] Stage {completed} captured.")
-                self.EnrollStatus("enroll-stage-passed", False)
-                time.sleep(1.0) 
+            print(f"[Enroll] Stage {completed + 1}: Waiting for touch...")
             
-        if not self.cancel_scan and completed == STAGES:
-            print("[Enroll] All stages complete. Saving...")
+            # Loop for Touch
+            frame_captured = None
+            while not self.cancel_scan:
+                data, contrast = self.driver.get_live_frame()
+                if data and contrast > self.driver.touch_threshold:
+                    print(f"[Enroll] Touch! (Contrast: {contrast:.2f})")
+                    frame_captured = data
+                    break
+                time.sleep(0.01)
+
+            if self.cancel_scan: break
+
+            if frame_captured:
+                samples.append(frame_captured)
+                completed += 1
+                self.EnrollStatus("enroll-stage-passed", False)
+                print(f"[Enroll] Stage {completed} captured.")
+                
+                # CRITICAL: Force lift before next stage
+                if completed < STAGES:
+                    print("[Enroll] Remove finger to continue...")
+                    if not self._wait_for_lift(): break
+
+        if completed == STAGES:
             full_name = f"{username}_{finger_name}"
             self.matcher.enroll_finger(full_name, samples)
             self.EnrollStatus("enroll-completed", True)
-        elif self.cancel_scan:
-             print("[Enroll] Cancelled.")
+            print("[Enroll] Completed Successfully.")
         else:
             self.EnrollStatus("enroll-failed", True)
 
     def _start_thread(self, target, args):
-        self._stop_scan_thread()
+        self.Cancel() # Stop any existing
         self.cancel_scan = False
         self.scan_thread = threading.Thread(target=target, args=args)
         self.scan_thread.daemon = True
         self.scan_thread.start()
 
-    def _stop_scan_thread(self):
-        self.cancel_scan = True
-        if self.scan_thread and self.scan_thread.is_alive():
-            self.scan_thread.join(timeout=2.0)
-
 if __name__ == "__main__":
     if not os.path.exists("/var/lib/open-fprintd/egis"):
-        try:
-            os.makedirs("/var/lib/open-fprintd/egis")
-        except PermissionError:
-            print("Error: Run as root to create /var/lib/open-fprintd/egis")
-            sys.exit(1)
+        try: os.makedirs("/var/lib/open-fprintd/egis")
+        except: pass
 
     bus = SystemBus()
     MY_DBUS_PATH = "/org/reactivated/Fprint/Device/Egis575"
@@ -187,25 +193,13 @@ if __name__ == "__main__":
     try:
         service = EgisService()
         bus.publish("org.reactivated.Fprint.Driver.Egis575", (MY_DBUS_PATH, service))
-        print("[Main] DBus Service Published locally.")
-    except Exception as e:
-        print(f"Failed to publish DBus service: {e}")
-        sys.exit(1)
-    
-    print("[Main] Registering with Open-Fprintd Manager...")
-    try:
-        # Use the correct Bus Name. 
-        # We also explicitly specify the Object Path where the Manager lives.
+        
+        # Register with Manager
         manager = bus.get("net.reactivated.Fprint", "/net/reactivated/Fprint/Manager")
         manager.RegisterDevice(MY_DBUS_PATH)
-        print("[Main] Plugin Registered! Ready for GNOME.")
-    except Exception as e:
-        print(f"[Error] Could not register with Manager: {e}")
-        print("Ensure 'open-fprintd' service is running!")
-        sys.exit(1)
-
-    loop = GLib.MainLoop()
-    try:
+        print("[Main] Service Running.")
+        
+        loop = GLib.MainLoop()
         loop.run()
-    except KeyboardInterrupt:
-        pass
+    except Exception as e:
+        print(f"[Main] Error: {e}")
