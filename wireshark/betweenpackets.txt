@@ -1,0 +1,1599 @@
+Frame 45022: Packet, 5147 bytes on wire (41176 bits), 5147 bytes captured (41176 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.969924000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.969924000 UTC
+    Epoch Arrival Time: 1767232155.969924000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 4.897000 milliseconds]
+    [Time delta from previous displayed frame: 4.897000 milliseconds]
+    [Time since reference or first frame: 30.380000000 seconds]
+    Frame Number: 45022
+    Frame Length: 5147 bytes (41176 bits)
+    Capture Length: 5147 bytes (41176 bits)
+    [Frame is marked: True]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.2]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 5120
+    [Request in: 45021]
+    [Time from request: 4.897000 milliseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data […]: 8ca7b3bfc6b5b6b5c8cdc4b2b1bfbcb69085858887868c95969798abbcd1d2d2bb9e84879a9fb2b3a7a89c867a7475796a8885977a909ebec5acabc3c6bdb9c0a8a4a6b4bdccc3a69f98959ca0a5a5a09394a6baa9aeabb1a9adb7a8afada9a5a6a7999fa5a38e8192
+
+Frame 45023: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.969931000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.969931000 UTC
+    Epoch Arrival Time: 1767232155.969931000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 7.000 microseconds]
+    [Time delta from previous displayed frame: 7.000 microseconds]
+    [Time since reference or first frame: 30.380007000 seconds]
+    Frame Number: 45023
+    Frame Length: 27 bytes (216 bits)
+    Capture Length: 27 bytes (216 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: host]
+    [Destination: 2.1.2]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x00, Direction: FDO -> PDO
+        0000 000. = Reserved: 0x00
+        .... ...0 = Direction: FDO -> PDO (0x0)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 0
+    [Response in: 45024]
+    [bInterfaceClass: Vendor Specific (0xff)]
+
+Frame 45024: Packet, 263 bytes on wire (2104 bits), 263 bytes captured (2104 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.969972000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.969972000 UTC
+    Epoch Arrival Time: 1767232155.969972000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 41.000 microseconds]
+    [Time delta from previous displayed frame: 41.000 microseconds]
+    [Time since reference or first frame: 30.380048000 seconds]
+    Frame Number: 45024
+    Frame Length: 263 bytes (2104 bits)
+    Capture Length: 263 bytes (2104 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.2]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 236
+    [Request in: 45023]
+    [Time from request: 41.000 microseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data […]: 585454514c50514e4c534d504d4b514a4b4f4b48544c4b4f494f514d4a4bc4c1ad957b7e848e85827e7b867f8b958f8f9594b3baa998b8d3d0c8a89ab2c7d9cdc0bdb6afa3ae9d9199b1bbd3cbcdc1cccbc8b9cdbcd6cfc7bf9a9fb0c4a98470675f585c5e5e5b5652
+
+Frame 45025: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.970198000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.970198000 UTC
+    Epoch Arrival Time: 1767232155.970198000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 226.000 microseconds]
+    [Time delta from previous displayed frame: 226.000 microseconds]
+    [Time since reference or first frame: 30.380274000 seconds]
+    Frame Number: 45025
+    Frame Length: 34 bytes (272 bits)
+    Capture Length: 34 bytes (272 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: host]
+    [Destination: 2.1.1]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a46ad8010
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x00, Direction: FDO -> PDO
+        0000 000. = Reserved: 0x00
+        .... ...0 = Direction: FDO -> PDO (0x0)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x01, Direction: OUT
+        0... .... = Direction: OUT (0)
+        .... 0001 = Endpoint number: 1
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 7
+    [Response in: 45026]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data: 45474953612d20
+
+Frame 45026: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.970252000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.970252000 UTC
+    Epoch Arrival Time: 1767232155.970252000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 54.000 microseconds]
+    [Time delta from previous displayed frame: 54.000 microseconds]
+    [Time since reference or first frame: 30.380328000 seconds]
+    Frame Number: 45026
+    Frame Length: 27 bytes (216 bits)
+    Capture Length: 27 bytes (216 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.1]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a46ad8010
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x01, Direction: OUT
+        0... .... = Direction: OUT (0)
+        .... 0001 = Endpoint number: 1
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 0
+    [Request in: 45025]
+    [Time from request: 54.000 microseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+
+Frame 45027: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.970385000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.970385000 UTC
+    Epoch Arrival Time: 1767232155.970385000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 133.000 microseconds]
+    [Time delta from previous displayed frame: 133.000 microseconds]
+    [Time since reference or first frame: 30.380461000 seconds]
+    Frame Number: 45027
+    Frame Length: 27 bytes (216 bits)
+    Capture Length: 27 bytes (216 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: host]
+    [Destination: 2.1.2]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x00, Direction: FDO -> PDO
+        0000 000. = Reserved: 0x00
+        .... ...0 = Direction: FDO -> PDO (0x0)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 0
+    [Response in: 45028]
+    [bInterfaceClass: Vendor Specific (0xff)]
+
+Frame 45028: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.970837000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.970837000 UTC
+    Epoch Arrival Time: 1767232155.970837000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 452.000 microseconds]
+    [Time delta from previous displayed frame: 452.000 microseconds]
+    [Time since reference or first frame: 30.380913000 seconds]
+    Frame Number: 45028
+    Frame Length: 34 bytes (272 bits)
+    Capture Length: 34 bytes (272 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.2]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 7
+    [Request in: 45027]
+    [Time from request: 452.000 microseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data: 534947452d2001
+
+Frame 45029: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.972421000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.972421000 UTC
+    Epoch Arrival Time: 1767232155.972421000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 1.584000 milliseconds]
+    [Time delta from previous displayed frame: 1.584000 milliseconds]
+    [Time since reference or first frame: 30.382497000 seconds]
+    Frame Number: 45029
+    Frame Length: 34 bytes (272 bits)
+    Capture Length: 34 bytes (272 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: host]
+    [Destination: 2.1.1]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a4712c750
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x00, Direction: FDO -> PDO
+        0000 000. = Reserved: 0x00
+        .... ...0 = Direction: FDO -> PDO (0x0)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x01, Direction: OUT
+        0... .... = Direction: OUT (0)
+        .... 0001 = Endpoint number: 1
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 7
+    [Response in: 45030]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data: 45474953600020
+
+Frame 45030: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.972460000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.972460000 UTC
+    Epoch Arrival Time: 1767232155.972460000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 39.000 microseconds]
+    [Time delta from previous displayed frame: 39.000 microseconds]
+    [Time since reference or first frame: 30.382536000 seconds]
+    Frame Number: 45030
+    Frame Length: 27 bytes (216 bits)
+    Capture Length: 27 bytes (216 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.1]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a4712c750
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x01, Direction: OUT
+        0... .... = Direction: OUT (0)
+        .... 0001 = Endpoint number: 1
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 0
+    [Request in: 45029]
+    [Time from request: 39.000 microseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+
+Frame 45031: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.972508000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.972508000 UTC
+    Epoch Arrival Time: 1767232155.972508000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 48.000 microseconds]
+    [Time delta from previous displayed frame: 48.000 microseconds]
+    [Time since reference or first frame: 30.382584000 seconds]
+    Frame Number: 45031
+    Frame Length: 27 bytes (216 bits)
+    Capture Length: 27 bytes (216 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: host]
+    [Destination: 2.1.2]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x00, Direction: FDO -> PDO
+        0000 000. = Reserved: 0x00
+        .... ...0 = Direction: FDO -> PDO (0x0)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 0
+    [Response in: 45032]
+    [bInterfaceClass: Vendor Specific (0xff)]
+
+Frame 45032: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.973040000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.973040000 UTC
+    Epoch Arrival Time: 1767232155.973040000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 532.000 microseconds]
+    [Time delta from previous displayed frame: 532.000 microseconds]
+    [Time since reference or first frame: 30.383116000 seconds]
+    Frame Number: 45032
+    Frame Length: 34 bytes (272 bits)
+    Capture Length: 34 bytes (272 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.2]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 7
+    [Request in: 45031]
+    [Time from request: 532.000 microseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data: 5349474500aa01
+
+Frame 45033: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.973103000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.973103000 UTC
+    Epoch Arrival Time: 1767232155.973103000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 63.000 microseconds]
+    [Time delta from previous displayed frame: 63.000 microseconds]
+    [Time since reference or first frame: 30.383179000 seconds]
+    Frame Number: 45033
+    Frame Length: 34 bytes (272 bits)
+    Capture Length: 34 bytes (272 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: host]
+    [Destination: 2.1.1]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a477c1050
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x00, Direction: FDO -> PDO
+        0000 000. = Reserved: 0x00
+        .... ...0 = Direction: FDO -> PDO (0x0)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x01, Direction: OUT
+        0... .... = Direction: OUT (0)
+        .... 0001 = Endpoint number: 1
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 7
+    [Response in: 45034]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data: 45474953600120
+
+Frame 45034: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.973126000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.973126000 UTC
+    Epoch Arrival Time: 1767232155.973126000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 23.000 microseconds]
+    [Time delta from previous displayed frame: 23.000 microseconds]
+    [Time since reference or first frame: 30.383202000 seconds]
+    Frame Number: 45034
+    Frame Length: 27 bytes (216 bits)
+    Capture Length: 27 bytes (216 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.1]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a477c1050
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x01, Direction: OUT
+        0... .... = Direction: OUT (0)
+        .... 0001 = Endpoint number: 1
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 0
+    [Request in: 45033]
+    [Time from request: 23.000 microseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+
+Frame 45035: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.973162000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.973162000 UTC
+    Epoch Arrival Time: 1767232155.973162000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 36.000 microseconds]
+    [Time delta from previous displayed frame: 36.000 microseconds]
+    [Time since reference or first frame: 30.383238000 seconds]
+    Frame Number: 45035
+    Frame Length: 27 bytes (216 bits)
+    Capture Length: 27 bytes (216 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: host]
+    [Destination: 2.1.2]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x00, Direction: FDO -> PDO
+        0000 000. = Reserved: 0x00
+        .... ...0 = Direction: FDO -> PDO (0x0)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 0
+    [Response in: 45036]
+    [bInterfaceClass: Vendor Specific (0xff)]
+
+Frame 45036: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.973706000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.973706000 UTC
+    Epoch Arrival Time: 1767232155.973706000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 544.000 microseconds]
+    [Time delta from previous displayed frame: 544.000 microseconds]
+    [Time since reference or first frame: 30.383782000 seconds]
+    Frame Number: 45036
+    Frame Length: 34 bytes (272 bits)
+    Capture Length: 34 bytes (272 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.2]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 7
+    [Request in: 45035]
+    [Time from request: 544.000 microseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data: 53494745010001
+
+Frame 45037: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.973788000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.973788000 UTC
+    Epoch Arrival Time: 1767232155.973788000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 82.000 microseconds]
+    [Time delta from previous displayed frame: 82.000 microseconds]
+    [Time since reference or first frame: 30.383864000 seconds]
+    Frame Number: 45037
+    Frame Length: 36 bytes (288 bits)
+    Capture Length: 36 bytes (288 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: host]
+    [Destination: 2.1.1]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a471d2010
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x00, Direction: FDO -> PDO
+        0000 000. = Reserved: 0x00
+        .... ...0 = Direction: FDO -> PDO (0x0)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x01, Direction: OUT
+        0... .... = Direction: OUT (0)
+        .... 0001 = Endpoint number: 1
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 9
+    [Response in: 45038]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data: 45474953632c020057
+
+Frame 45038: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.973813000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.973813000 UTC
+    Epoch Arrival Time: 1767232155.973813000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 25.000 microseconds]
+    [Time delta from previous displayed frame: 25.000 microseconds]
+    [Time since reference or first frame: 30.383889000 seconds]
+    Frame Number: 45038
+    Frame Length: 27 bytes (216 bits)
+    Capture Length: 27 bytes (216 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.1]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a471d2010
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x01, Direction: OUT
+        0... .... = Direction: OUT (0)
+        .... 0001 = Endpoint number: 1
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 0
+    [Request in: 45037]
+    [Time from request: 25.000 microseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+
+Frame 45039: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.973866000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.973866000 UTC
+    Epoch Arrival Time: 1767232155.973866000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 53.000 microseconds]
+    [Time delta from previous displayed frame: 53.000 microseconds]
+    [Time since reference or first frame: 30.383942000 seconds]
+    Frame Number: 45039
+    Frame Length: 27 bytes (216 bits)
+    Capture Length: 27 bytes (216 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: host]
+    [Destination: 2.1.2]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x00, Direction: FDO -> PDO
+        0000 000. = Reserved: 0x00
+        .... ...0 = Direction: FDO -> PDO (0x0)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 0
+    [Response in: 45040]
+    [bInterfaceClass: Vendor Specific (0xff)]
+
+Frame 45040: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.974456000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.974456000 UTC
+    Epoch Arrival Time: 1767232155.974456000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 590.000 microseconds]
+    [Time delta from previous displayed frame: 590.000 microseconds]
+    [Time since reference or first frame: 30.384532000 seconds]
+    Frame Number: 45040
+    Frame Length: 36 bytes (288 bits)
+    Capture Length: 36 bytes (288 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.2]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 9
+    [Request in: 45039]
+    [Time from request: 590.000 microseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data: 534947452c02010057
+
+Frame 45041: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.974507000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.974507000 UTC
+    Epoch Arrival Time: 1767232155.974507000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 51.000 microseconds]
+    [Time delta from previous displayed frame: 51.000 microseconds]
+    [Time since reference or first frame: 30.384583000 seconds]
+    Frame Number: 45041
+    Frame Length: 34 bytes (272 bits)
+    Capture Length: 34 bytes (272 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: host]
+    [Destination: 2.1.1]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a4712c750
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x00, Direction: FDO -> PDO
+        0000 000. = Reserved: 0x00
+        .... ...0 = Direction: FDO -> PDO (0x0)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x01, Direction: OUT
+        0... .... = Direction: OUT (0)
+        .... 0001 = Endpoint number: 1
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 7
+    [Response in: 45042]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data: 45474953602d02
+
+Frame 45042: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.974530000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.974530000 UTC
+    Epoch Arrival Time: 1767232155.974530000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 23.000 microseconds]
+    [Time delta from previous displayed frame: 23.000 microseconds]
+    [Time since reference or first frame: 30.384606000 seconds]
+    Frame Number: 45042
+    Frame Length: 27 bytes (216 bits)
+    Capture Length: 27 bytes (216 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.1]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a4712c750
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x01, Direction: OUT
+        0... .... = Direction: OUT (0)
+        .... 0001 = Endpoint number: 1
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 0
+    [Request in: 45041]
+    [Time from request: 23.000 microseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+
+Frame 45043: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.974565000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.974565000 UTC
+    Epoch Arrival Time: 1767232155.974565000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 35.000 microseconds]
+    [Time delta from previous displayed frame: 35.000 microseconds]
+    [Time since reference or first frame: 30.384641000 seconds]
+    Frame Number: 45043
+    Frame Length: 27 bytes (216 bits)
+    Capture Length: 27 bytes (216 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: host]
+    [Destination: 2.1.2]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x00, Direction: FDO -> PDO
+        0000 000. = Reserved: 0x00
+        .... ...0 = Direction: FDO -> PDO (0x0)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 0
+    [Response in: 45044]
+    [bInterfaceClass: Vendor Specific (0xff)]
+
+Frame 45044: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.975126000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.975126000 UTC
+    Epoch Arrival Time: 1767232155.975126000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 561.000 microseconds]
+    [Time delta from previous displayed frame: 561.000 microseconds]
+    [Time since reference or first frame: 30.385202000 seconds]
+    Frame Number: 45044
+    Frame Length: 34 bytes (272 bits)
+    Capture Length: 34 bytes (272 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.2]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 7
+    [Request in: 45043]
+    [Time from request: 561.000 microseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data: 534947452d4701
+
+Frame 45045: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.975166000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.975166000 UTC
+    Epoch Arrival Time: 1767232155.975166000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 40.000 microseconds]
+    [Time delta from previous displayed frame: 40.000 microseconds]
+    [Time since reference or first frame: 30.385242000 seconds]
+    Frame Number: 45045
+    Frame Length: 34 bytes (272 bits)
+    Capture Length: 34 bytes (272 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: host]
+    [Destination: 2.1.1]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a477c1050
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x00, Direction: FDO -> PDO
+        0000 000. = Reserved: 0x00
+        .... ...0 = Direction: FDO -> PDO (0x0)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x01, Direction: OUT
+        0... .... = Direction: OUT (0)
+        .... 0001 = Endpoint number: 1
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 7
+    [Response in: 45046]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data: 45474953626703
+
+Frame 45046: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.975190000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.975190000 UTC
+    Epoch Arrival Time: 1767232155.975190000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 24.000 microseconds]
+    [Time delta from previous displayed frame: 24.000 microseconds]
+    [Time since reference or first frame: 30.385266000 seconds]
+    Frame Number: 45046
+    Frame Length: 27 bytes (216 bits)
+    Capture Length: 27 bytes (216 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.1]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a477c1050
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x01, Direction: OUT
+        0... .... = Direction: OUT (0)
+        .... 0001 = Endpoint number: 1
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 0
+    [Request in: 45045]
+    [Time from request: 24.000 microseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+
+Frame 45047: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.975222000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.975222000 UTC
+    Epoch Arrival Time: 1767232155.975222000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 32.000 microseconds]
+    [Time delta from previous displayed frame: 32.000 microseconds]
+    [Time since reference or first frame: 30.385298000 seconds]
+    Frame Number: 45047
+    Frame Length: 27 bytes (216 bits)
+    Capture Length: 27 bytes (216 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: host]
+    [Destination: 2.1.2]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x00, Direction: FDO -> PDO
+        0000 000. = Reserved: 0x00
+        .... ...0 = Direction: FDO -> PDO (0x0)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 0
+    [Response in: 45048]
+    [bInterfaceClass: Vendor Specific (0xff)]
+
+Frame 45048: Packet, 37 bytes on wire (296 bits), 37 bytes captured (296 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.975881000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.975881000 UTC
+    Epoch Arrival Time: 1767232155.975881000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 659.000 microseconds]
+    [Time delta from previous displayed frame: 659.000 microseconds]
+    [Time since reference or first frame: 30.385957000 seconds]
+    Frame Number: 45048
+    Frame Length: 37 bytes (296 bits)
+    Capture Length: 37 bytes (296 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.2]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 10
+    [Request in: 45047]
+    [Time from request: 659.000 microseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data: 534947456703016ad1aa
+
+Frame 45049: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.975933000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.975933000 UTC
+    Epoch Arrival Time: 1767232155.975933000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 52.000 microseconds]
+    [Time delta from previous displayed frame: 52.000 microseconds]
+    [Time since reference or first frame: 30.386009000 seconds]
+    Frame Number: 45049
+    Frame Length: 36 bytes (288 bits)
+    Capture Length: 36 bytes (288 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: host]
+    [Destination: 2.1.1]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a4712c750
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x00, Direction: FDO -> PDO
+        0000 000. = Reserved: 0x00
+        .... ...0 = Direction: FDO -> PDO (0x0)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x01, Direction: OUT
+        0... .... = Direction: OUT (0)
+        .... 0001 = Endpoint number: 1
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 9
+    [Response in: 45050]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data: 45474953632c020013
+
+Frame 45050: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.975956000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.975956000 UTC
+    Epoch Arrival Time: 1767232155.975956000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 23.000 microseconds]
+    [Time delta from previous displayed frame: 23.000 microseconds]
+    [Time since reference or first frame: 30.386032000 seconds]
+    Frame Number: 45050
+    Frame Length: 27 bytes (216 bits)
+    Capture Length: 27 bytes (216 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.1]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a4712c750
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x01, Direction: OUT
+        0... .... = Direction: OUT (0)
+        .... 0001 = Endpoint number: 1
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 0
+    [Request in: 45049]
+    [Time from request: 23.000 microseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+
+Frame 45051: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.975988000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.975988000 UTC
+    Epoch Arrival Time: 1767232155.975988000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 32.000 microseconds]
+    [Time delta from previous displayed frame: 32.000 microseconds]
+    [Time since reference or first frame: 30.386064000 seconds]
+    Frame Number: 45051
+    Frame Length: 27 bytes (216 bits)
+    Capture Length: 27 bytes (216 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: host]
+    [Destination: 2.1.2]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x00, Direction: FDO -> PDO
+        0000 000. = Reserved: 0x00
+        .... ...0 = Direction: FDO -> PDO (0x0)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 0
+    [Response in: 45052]
+    [bInterfaceClass: Vendor Specific (0xff)]
+
+Frame 45052: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.976602000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.976602000 UTC
+    Epoch Arrival Time: 1767232155.976602000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 614.000 microseconds]
+    [Time delta from previous displayed frame: 614.000 microseconds]
+    [Time since reference or first frame: 30.386678000 seconds]
+    Frame Number: 45052
+    Frame Length: 36 bytes (288 bits)
+    Capture Length: 36 bytes (288 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.2]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 9
+    [Request in: 45051]
+    [Time from request: 614.000 microseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data: 534947452c02010013
+
+Frame 45053: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.976637000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.976637000 UTC
+    Epoch Arrival Time: 1767232155.976637000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 35.000 microseconds]
+    [Time delta from previous displayed frame: 35.000 microseconds]
+    [Time since reference or first frame: 30.386713000 seconds]
+    Frame Number: 45053
+    Frame Length: 34 bytes (272 bits)
+    Capture Length: 34 bytes (272 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: host]
+    [Destination: 2.1.1]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a4712c750
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x00, Direction: FDO -> PDO
+        0000 000. = Reserved: 0x00
+        .... ...0 = Direction: FDO -> PDO (0x0)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x01, Direction: OUT
+        0... .... = Direction: OUT (0)
+        .... 0001 = Endpoint number: 1
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 7
+    [Response in: 45054]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data: 45474953600002
+
+Frame 45054: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.976659000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.976659000 UTC
+    Epoch Arrival Time: 1767232155.976659000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 22.000 microseconds]
+    [Time delta from previous displayed frame: 22.000 microseconds]
+    [Time since reference or first frame: 30.386735000 seconds]
+    Frame Number: 45054
+    Frame Length: 27 bytes (216 bits)
+    Capture Length: 27 bytes (216 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.1]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a4712c750
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x01, Direction: OUT
+        0... .... = Direction: OUT (0)
+        .... 0001 = Endpoint number: 1
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 0
+    [Request in: 45053]
+    [Time from request: 22.000 microseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+
+Frame 45055: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.976691000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.976691000 UTC
+    Epoch Arrival Time: 1767232155.976691000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 32.000 microseconds]
+    [Time delta from previous displayed frame: 32.000 microseconds]
+    [Time since reference or first frame: 30.386767000 seconds]
+    Frame Number: 45055
+    Frame Length: 27 bytes (216 bits)
+    Capture Length: 27 bytes (216 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: host]
+    [Destination: 2.1.2]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x00, Direction: FDO -> PDO
+        0000 000. = Reserved: 0x00
+        .... ...0 = Direction: FDO -> PDO (0x0)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 0
+    [Response in: 45056]
+    [bInterfaceClass: Vendor Specific (0xff)]
+
+Frame 45056: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.977287000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.977287000 UTC
+    Epoch Arrival Time: 1767232155.977287000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 596.000 microseconds]
+    [Time delta from previous displayed frame: 596.000 microseconds]
+    [Time since reference or first frame: 30.387363000 seconds]
+    Frame Number: 45056
+    Frame Length: 34 bytes (272 bits)
+    Capture Length: 34 bytes (272 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.2]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 7
+    [Request in: 45055]
+    [Time from request: 596.000 microseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data: 5349474500ab01
+
+Frame 45057: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.977329000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.977329000 UTC
+    Epoch Arrival Time: 1767232155.977329000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 42.000 microseconds]
+    [Time delta from previous displayed frame: 42.000 microseconds]
+    [Time since reference or first frame: 30.387405000 seconds]
+    Frame Number: 45057
+    Frame Length: 34 bytes (272 bits)
+    Capture Length: 34 bytes (272 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: host]
+    [Destination: 2.1.1]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a477c1050
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x00, Direction: FDO -> PDO
+        0000 000. = Reserved: 0x00
+        .... ...0 = Direction: FDO -> PDO (0x0)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x01, Direction: OUT
+        0... .... = Direction: OUT (0)
+        .... 0001 = Endpoint number: 1
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 7
+    [Response in: 45058]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data: 454749536414ec
+
+Frame 45058: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.977352000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.977352000 UTC
+    Epoch Arrival Time: 1767232155.977352000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 23.000 microseconds]
+    [Time delta from previous displayed frame: 23.000 microseconds]
+    [Time since reference or first frame: 30.387428000 seconds]
+    Frame Number: 45058
+    Frame Length: 27 bytes (216 bits)
+    Capture Length: 27 bytes (216 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.1]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a477c1050
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x01, Direction: OUT
+        0... .... = Direction: OUT (0)
+        .... 0001 = Endpoint number: 1
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 0
+    [Request in: 45057]
+    [Time from request: 23.000 microseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+
+Frame 45059: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.977384000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.977384000 UTC
+    Epoch Arrival Time: 1767232155.977384000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 32.000 microseconds]
+    [Time delta from previous displayed frame: 32.000 microseconds]
+    [Time since reference or first frame: 30.387460000 seconds]
+    Frame Number: 45059
+    Frame Length: 27 bytes (216 bits)
+    Capture Length: 27 bytes (216 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: host]
+    [Destination: 2.1.2]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x00, Direction: FDO -> PDO
+        0000 000. = Reserved: 0x00
+        .... ...0 = Direction: FDO -> PDO (0x0)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 0
+    [Response in: 45060]
+    [bInterfaceClass: Vendor Specific (0xff)]
+
+Frame 45060: Packet, 5147 bytes on wire (41176 bits), 5147 bytes captured (41176 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Dec 31, 2025 19:49:15.982306000 CST
+    UTC Arrival Time: Jan  1, 2026 01:49:15.982306000 UTC
+    Epoch Arrival Time: 1767232155.982306000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 4.922000 milliseconds]
+    [Time delta from previous displayed frame: 4.922000 milliseconds]
+    [Time since reference or first frame: 30.392382000 seconds]
+    Frame Number: 45060
+    Frame Length: 5147 bytes (41176 bits)
+    Capture Length: 5147 bytes (41176 bits)
+    [Frame is marked: True]
+    [Frame is ignored: False]
+    [Protocols in frame: usb]
+    Character encoding: ASCII (0)
+USB URB
+    [Source: 2.1.2]
+    [Destination: host]
+    USBPcap pseudoheader length: 27
+    IRP ID: 0xffff9c0a2df70420
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER (0x0009)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 1
+    Endpoint: 0x82, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0010 = Endpoint number: 2
+    URB transfer type: URB_BULK (0x03)
+    Packet Data Length: 5120
+    [Request in: 45059]
+    [Time from request: 4.922000 milliseconds]
+    [bInterfaceClass: Vendor Specific (0xff)]
+Leftover Capture Data […]: bec9c9cfcac6c2bec5c7bab1aab7bbcdbcbfbbbfc6c4cecdccd3cbcacbd5d1d1cacfccc4cfcad8d1c4d2d0c9c7c1bcc4bcdacbddc0e0cdc9d0d4ced6d0d6cbd8c8cbc9cec8d6cbc2cacdc5cfd3cecbcecccec5cec1c3b5aab2c5d4c2d2d3cbb5b0c2cdc9b9a994becf

@@ -1,0 +1,1650 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000       host                  2.1.0                 USB      36     GET DESCRIPTOR Request DEVICE
+
+Frame 1: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Setup Data
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.000000       2.1.0                 host                  USB      46     GET DESCRIPTOR Response DEVICE
+
+Frame 2: Packet, 46 bytes on wire (368 bits), 46 bytes captured (368 bits) on interface \\.\USBPcap2, id 0
+USB URB
+DEVICE DESCRIPTOR
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.000000       host                  2.1.0                 USB      36     GET DESCRIPTOR Request CONFIGURATION
+
+Frame 3: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Setup Data
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.000000       2.1.0                 host                  USB      74     GET DESCRIPTOR Response CONFIGURATION
+
+Frame 4: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface \\.\USBPcap2, id 0
+USB URB
+CONFIGURATION DESCRIPTOR
+INTERFACE DESCRIPTOR (0.0): class Vendor Specific
+ENDPOINT DESCRIPTOR
+ENDPOINT DESCRIPTOR
+ENDPOINT DESCRIPTOR
+ENDPOINT DESCRIPTOR
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 0.000000       host                  2.1.0                 USB      36     SET CONFIGURATION Request
+
+Frame 5: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Setup Data
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 0.000000       2.1.0                 host                  USB      28     SET CONFIGURATION Response
+
+Frame 6: Packet, 28 bytes on wire (224 bits), 28 bytes captured (224 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 6.299621       host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 7: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953600006
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 6.299691       2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 8: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 6.299766       host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 9: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 6.300369       2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 10: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 5349474500aa01
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 6.300452       host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 11: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953600106
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 6.300475       2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 12: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 6.300526       host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 13: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     14 6.301053       2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 14: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745010001
+
+No.     Time           Source                Destination           Protocol Length Info
+     15 6.301106       host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 15: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953604006
+
+No.     Time           Source                Destination           Protocol Length Info
+     16 6.301123       2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 16: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     17 6.301152       host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 17: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     18 6.301767       2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 18: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745408301
+
+No.     Time           Source                Destination           Protocol Length Info
+     19 6.301815       host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 19: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953610af4
+
+No.     Time           Source                Destination           Protocol Length Info
+     20 6.301837       2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 20: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     21 6.301881       host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 21: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     22 6.302478       2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 22: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 534947450af401
+
+No.     Time           Source                Destination           Protocol Length Info
+     23 6.302554       host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 23: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953610c44
+
+No.     Time           Source                Destination           Protocol Length Info
+     24 6.302577       2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 24: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     25 6.302626       host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 25: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     26 6.303217       2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 26: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 534947450c4401
+
+No.     Time           Source                Destination           Protocol Length Info
+     27 6.303271       host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 27: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953614000
+
+No.     Time           Source                Destination           Protocol Length Info
+     28 6.303302       2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 28: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     29 6.303335       host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 29: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     30 6.303903       2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 30: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745400001
+
+No.     Time           Source                Destination           Protocol Length Info
+     31 6.303970       host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 31: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953604000
+
+No.     Time           Source                Destination           Protocol Length Info
+     32 6.303989       2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 32: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     33 6.304028       host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 33: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     34 6.304626       2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 34: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745400001
+
+No.     Time           Source                Destination           Protocol Length Info
+     35 6.304685       host                  2.1.1                 USB      36     URB_BULK out
+
+Frame 35: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953710202010c
+
+No.     Time           Source                Destination           Protocol Length Info
+     36 6.304703       2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 36: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     37 6.304740       host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 37: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     38 6.305347       2.1.2                 host                  USB      36     URB_BULK in
+
+Frame 38: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745020201010c
+
+No.     Time           Source                Destination           Protocol Length Info
+     39 6.305393       host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 39: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953610c22
+
+No.     Time           Source                Destination           Protocol Length Info
+     40 6.305410       2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 40: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     41 6.305438       host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 41: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     42 6.306049       2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 42: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 534947450c2201
+
+No.     Time           Source                Destination           Protocol Length Info
+     43 6.306089       host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 43: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953610b03
+
+No.     Time           Source                Destination           Protocol Length Info
+     44 6.306104       2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 44: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     45 6.306132       host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 45: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     46 6.306742       2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 46: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 534947450b0301
+
+No.     Time           Source                Destination           Protocol Length Info
+     47 6.306799       host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 47: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953610afc
+
+No.     Time           Source                Destination           Protocol Length Info
+     48 6.306821       2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 48: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     49 6.306850       host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 49: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     50 6.307459       2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 50: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 534947450afc01
+
+No.     Time           Source                Destination           Protocol Length Info
+     51 22.395844      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 51: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 454749536000fc
+
+No.     Time           Source                Destination           Protocol Length Info
+     52 22.395922      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 52: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     53 22.396017      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 53: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     54 22.396529      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 54: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 5349474500aa01
+
+No.     Time           Source                Destination           Protocol Length Info
+     55 22.396612      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 55: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 454749536001fc
+
+No.     Time           Source                Destination           Protocol Length Info
+     56 22.396648      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 56: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     57 22.396744      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 57: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     58 22.397227      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 58: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745010101
+
+No.     Time           Source                Destination           Protocol Length Info
+     59 22.397292      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 59: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953970000
+
+No.     Time           Source                Destination           Protocol Length Info
+     60 22.397329      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 60: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     61 22.397372      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 61: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     62 22.413109      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 62: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745000001
+
+No.     Time           Source                Destination           Protocol Length Info
+     63 22.413220      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 63: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953600000
+
+No.     Time           Source                Destination           Protocol Length Info
+     64 22.413278      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 64: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     65 22.413377      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 65: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     66 22.413911      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 66: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745000001
+
+No.     Time           Source                Destination           Protocol Length Info
+     67 22.413993      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 67: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953600000
+
+No.     Time           Source                Destination           Protocol Length Info
+     68 22.414033      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 68: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     69 22.414098      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 69: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     70 22.414610      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 70: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745000001
+
+No.     Time           Source                Destination           Protocol Length Info
+     71 22.414682      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 71: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953600000
+
+No.     Time           Source                Destination           Protocol Length Info
+     72 22.414731      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 72: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     73 22.414775      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 73: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     74 22.415284      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 74: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745000001
+
+No.     Time           Source                Destination           Protocol Length Info
+     75 22.415333      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 75: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953600000
+
+No.     Time           Source                Destination           Protocol Length Info
+     76 22.415355      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 76: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     77 22.415390      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 77: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     78 22.416003      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 78: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745000001
+
+No.     Time           Source                Destination           Protocol Length Info
+     79 22.416054      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 79: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953600000
+
+No.     Time           Source                Destination           Protocol Length Info
+     80 22.416076      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 80: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     81 22.416147      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 81: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     82 22.416711      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 82: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745000001
+
+No.     Time           Source                Destination           Protocol Length Info
+     83 22.416764      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 83: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953600000
+
+No.     Time           Source                Destination           Protocol Length Info
+     84 22.416784      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 84: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     85 22.416818      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 85: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     86 22.417378      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 86: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745000001
+
+No.     Time           Source                Destination           Protocol Length Info
+     87 22.417422      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 87: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953600000
+
+No.     Time           Source                Destination           Protocol Length Info
+     88 22.417445      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 88: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     89 22.417473      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 89: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     90 22.418082      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 90: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745000001
+
+No.     Time           Source                Destination           Protocol Length Info
+     91 22.418127      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 91: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953600000
+
+No.     Time           Source                Destination           Protocol Length Info
+     92 22.418149      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 92: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     93 22.418182      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 93: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     94 22.418786      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 94: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745000001
+
+No.     Time           Source                Destination           Protocol Length Info
+     95 22.418841      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 95: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953600000
+
+No.     Time           Source                Destination           Protocol Length Info
+     96 22.418868      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 96: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     97 22.418901      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 97: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     98 22.419505      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 98: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745000001
+
+No.     Time           Source                Destination           Protocol Length Info
+     99 22.419556      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 99: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953600000
+
+No.     Time           Source                Destination           Protocol Length Info
+    100 22.419581      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 100: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    101 22.419634      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 101: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    102 22.420216      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 102: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745000001
+
+No.     Time           Source                Destination           Protocol Length Info
+    103 22.420266      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 103: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953600000
+
+No.     Time           Source                Destination           Protocol Length Info
+    104 22.420289      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 104: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    105 22.420333      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 105: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    106 22.420886      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 106: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745000001
+
+No.     Time           Source                Destination           Protocol Length Info
+    107 22.420932      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 107: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953600000
+
+No.     Time           Source                Destination           Protocol Length Info
+    108 22.420957      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 108: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    109 22.420989      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 109: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    110 22.421592      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 110: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 5349474500aa01
+
+No.     Time           Source                Destination           Protocol Length Info
+    111 22.421638      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 111: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953600100
+
+No.     Time           Source                Destination           Protocol Length Info
+    112 22.421662      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 112: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    113 22.421690      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 113: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    114 22.422298      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 114: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745010101
+
+No.     Time           Source                Destination           Protocol Length Info
+    115 22.422337      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 115: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953610afd
+
+No.     Time           Source                Destination           Protocol Length Info
+    116 22.422369      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 116: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    117 22.422405      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 117: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    118 22.423010      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 118: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 534947450afd01
+
+No.     Time           Source                Destination           Protocol Length Info
+    119 22.423066      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 119: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953613502
+
+No.     Time           Source                Destination           Protocol Length Info
+    120 22.423091      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 120: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    121 22.423126      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 121: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    122 22.423732      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 122: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745350201
+
+No.     Time           Source                Destination           Protocol Length Info
+    123 22.423780      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 123: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953618000
+
+No.     Time           Source                Destination           Protocol Length Info
+    124 22.423804      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 124: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    125 22.423841      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 125: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    126 22.424456      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 126: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745800001
+
+No.     Time           Source                Destination           Protocol Length Info
+    127 22.424533      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 127: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953608000
+
+No.     Time           Source                Destination           Protocol Length Info
+    128 22.424570      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 128: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    129 22.424608      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 129: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    130 22.425196      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 130: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745800201
+
+No.     Time           Source                Destination           Protocol Length Info
+    131 22.425253      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 131: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953610afc
+
+No.     Time           Source                Destination           Protocol Length Info
+    132 22.425273      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 132: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    133 22.425337      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 133: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    134 22.425953      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 134: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 534947450afc01
+
+No.     Time           Source                Destination           Protocol Length Info
+    135 22.426018      host                  2.1.1                 USB      36     URB_BULK out
+
+Frame 135: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 454749536301020f03
+
+No.     Time           Source                Destination           Protocol Length Info
+    136 22.426045      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 136: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    137 22.426110      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 137: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    138 22.426630      2.1.2                 host                  USB      36     URB_BULK in
+
+Frame 138: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 534947450102010f03
+
+No.     Time           Source                Destination           Protocol Length Info
+    139 22.426685      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 139: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953610c22
+
+No.     Time           Source                Destination           Protocol Length Info
+    140 22.426794      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 140: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    141 22.426839      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 141: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    142 22.427348      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 142: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 534947450c2201
+
+No.     Time           Source                Destination           Protocol Length Info
+    143 22.427404      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 143: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953610983
+
+No.     Time           Source                Destination           Protocol Length Info
+    144 22.427426      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 144: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    145 22.427489      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 145: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    146 22.428024      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 146: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745098301
+
+No.     Time           Source                Destination           Protocol Length Info
+    147 22.428073      host                  2.1.1                 USB      40     URB_BULK out
+
+Frame 147: Packet, 40 bytes on wire (320 bits), 40 bytes captured (320 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953632606066006052f06
+
+No.     Time           Source                Destination           Protocol Length Info
+    148 22.428098      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 148: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    149 22.428129      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 149: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    150 22.428754      2.1.2                 host                  USB      40     URB_BULK in
+
+Frame 150: Packet, 40 bytes on wire (320 bits), 40 bytes captured (320 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745260601066006052f06
+
+No.     Time           Source                Destination           Protocol Length Info
+    151 22.428801      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 151: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953610af4
+
+No.     Time           Source                Destination           Protocol Length Info
+    152 22.428826      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 152: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    153 22.428856      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 153: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    154 22.429463      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 154: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 534947450af401
+
+No.     Time           Source                Destination           Protocol Length Info
+    155 22.429508      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 155: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953610c44
+
+No.     Time           Source                Destination           Protocol Length Info
+    156 22.429532      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 156: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    157 22.429562      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 157: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    158 22.430173      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 158: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 534947450c4401
+
+No.     Time           Source                Destination           Protocol Length Info
+    159 22.430215      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 159: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953615003
+
+No.     Time           Source                Destination           Protocol Length Info
+    160 22.430245      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 160: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    161 22.430274      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 161: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    162 22.430885      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 162: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745500301
+
+No.     Time           Source                Destination           Protocol Length Info
+    163 22.430926      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 163: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953605003
+
+No.     Time           Source                Destination           Protocol Length Info
+    164 22.430945      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 164: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    165 22.430986      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 165: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    166 22.431580      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 166: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745508201
+
+No.     Time           Source                Destination           Protocol Length Info
+    167 22.431639      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 167: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 454749537314ec
+
+No.     Time           Source                Destination           Protocol Length Info
+    168 22.431663      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 168: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    169 22.431711      host                  2.1.1                 USB      5383   URB_BULK out
+
+Frame 169: Packet, 5383 bytes on wire (43064 bits), 5383 bytes captured (43064 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data […]: 1d1b1c1c1e1c1a1b1b1c1e1c1c1d1c1e1c1d1c1d1d1b1d1b1b201d1a1a1f1c1d1e1b1c1b1d1b1f1d1b1e1d1e1d1e1d1f1a1e1c201b1e1e1d1c1d1c1e1b1f1d1f1b1d1d1f1c1d1e1c1e1f1c201e1f1f1f1e201c1f1d1f1e211e1e1f1c1e201f1a1f1f1d1e1e1e201c1f
+
+No.     Time           Source                Destination           Protocol Length Info
+    170 22.432378      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 170: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    171 22.432428      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 171: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    172 22.436969      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 172: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 5349474514ec01
+
+No.     Time           Source                Destination           Protocol Length Info
+    173 22.437024      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 173: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 454749536040ec
+
+No.     Time           Source                Destination           Protocol Length Info
+    174 22.437048      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 174: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    175 22.437107      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 175: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    176 22.437684      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 176: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745400001
+
+No.     Time           Source                Destination           Protocol Length Info
+    177 22.437727      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 177: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953610c22
+
+No.     Time           Source                Destination           Protocol Length Info
+    178 22.437753      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 178: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    179 22.437784      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 179: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    180 22.438358      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 180: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 534947450c2201
+
+No.     Time           Source                Destination           Protocol Length Info
+    181 22.438404      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 181: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953610b03
+
+No.     Time           Source                Destination           Protocol Length Info
+    182 22.438429      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 182: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    183 22.438461      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 183: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    184 22.439072      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 184: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 534947450b0301
+
+No.     Time           Source                Destination           Protocol Length Info
+    185 22.439111      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 185: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953610afc
+
+No.     Time           Source                Destination           Protocol Length Info
+    186 22.439139      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 186: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    187 22.439166      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 187: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    188 22.439754      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 188: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 534947450afc01
+
+No.     Time           Source                Destination           Protocol Length Info
+    189 22.439800      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 189: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 454749536040fc
+
+No.     Time           Source                Destination           Protocol Length Info
+    190 22.439824      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 190: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    191 22.439859      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 191: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    192 22.440460      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 192: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745400001
+
+No.     Time           Source                Destination           Protocol Length Info
+    193 22.440502      host                  2.1.1                 USB      45     URB_BULK out
+
+Frame 193: Packet, 45 bytes on wire (360 bits), 45 bytes captured (360 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 4547495363090b832400440f082020010512
+
+No.     Time           Source                Destination           Protocol Length Info
+    194 22.440526      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 194: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    195 22.440557      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 195: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    196 22.441180      2.1.2                 host                  USB      45     URB_BULK in
+
+Frame 196: Packet, 45 bytes on wire (360 bits), 45 bytes captured (360 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745090b01832400440f082020010512
+
+No.     Time           Source                Destination           Protocol Length Info
+    197 22.441288      host                  2.1.1                 USB      40     URB_BULK out
+
+Frame 197: Packet, 40 bytes on wire (320 bits), 40 bytes captured (320 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953632606066006052f06
+
+No.     Time           Source                Destination           Protocol Length Info
+    198 22.441311      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 198: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    199 22.441389      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 199: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    200 22.441942      2.1.2                 host                  USB      40     URB_BULK in
+
+Frame 200: Packet, 40 bytes on wire (320 bits), 40 bytes captured (320 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745260601066006052f06
+
+No.     Time           Source                Destination           Protocol Length Info
+    201 22.441989      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 201: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953612300
+
+No.     Time           Source                Destination           Protocol Length Info
+    202 22.442009      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 202: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    203 22.442041      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 203: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    204 22.442630      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 204: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745230001
+
+No.     Time           Source                Destination           Protocol Length Info
+    205 22.442717      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 205: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953612433
+
+No.     Time           Source                Destination           Protocol Length Info
+    206 22.442745      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 206: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    207 22.442806      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 207: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    208 22.443432      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 208: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745243301
+
+No.     Time           Source                Destination           Protocol Length Info
+    209 22.443484      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 209: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953612000
+
+No.     Time           Source                Destination           Protocol Length Info
+    210 22.443510      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 210: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    211 22.443540      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 211: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    212 22.444092      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 212: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745200001
+
+No.     Time           Source                Destination           Protocol Length Info
+    213 22.444135      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 213: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953612166
+
+No.     Time           Source                Destination           Protocol Length Info
+    214 22.444157      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 214: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    215 22.444209      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 215: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    216 22.444768      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 216: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745216601
+
+No.     Time           Source                Destination           Protocol Length Info
+    217 22.444842      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 217: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953600066
+
+No.     Time           Source                Destination           Protocol Length Info
+    218 22.444861      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 218: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    219 22.444908      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 219: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    220 22.445505      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 220: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 5349474500aa01
+
+No.     Time           Source                Destination           Protocol Length Info
+    221 22.445554      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 221: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953600166
+
+No.     Time           Source                Destination           Protocol Length Info
+    222 22.445579      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 222: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    223 22.445615      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 223: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    224 22.446211      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 224: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 53494745010001
+
+No.     Time           Source                Destination           Protocol Length Info
+    225 22.446251      host                  2.1.1                 USB      36     URB_BULK out
+
+Frame 225: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953632c020057
+
+No.     Time           Source                Destination           Protocol Length Info
+    226 22.446276      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 226: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    227 22.446304      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 227: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    228 22.446919      2.1.2                 host                  USB      36     URB_BULK in
+
+Frame 228: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 534947452c02010057
+
+No.     Time           Source                Destination           Protocol Length Info
+    229 22.446967      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 229: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953602d02
+
+No.     Time           Source                Destination           Protocol Length Info
+    230 22.446995      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 230: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    231 22.447033      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 231: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    232 22.447630      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 232: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 534947452d4701
+
+No.     Time           Source                Destination           Protocol Length Info
+    233 22.447680      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 233: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953626703
+
+No.     Time           Source                Destination           Protocol Length Info
+    234 22.447703      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 234: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    235 22.447755      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 235: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    236 22.448349      2.1.2                 host                  USB      37     URB_BULK in
+
+Frame 236: Packet, 37 bytes on wire (296 bits), 37 bytes captured (296 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 534947456703015b645e
+
+No.     Time           Source                Destination           Protocol Length Info
+    237 22.448391      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 237: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953600f03
+
+No.     Time           Source                Destination           Protocol Length Info
+    238 22.448414      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 238: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    239 22.448461      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 239: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    240 22.449017      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 240: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 534947450f2001
+
+No.     Time           Source                Destination           Protocol Length Info
+    241 22.449059      host                  2.1.1                 USB      36     URB_BULK out
+
+Frame 241: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953632c020013
+
+No.     Time           Source                Destination           Protocol Length Info
+    242 22.449084      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 242: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    243 22.449114      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 243: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    244 22.449734      2.1.2                 host                  USB      36     URB_BULK in
+
+Frame 244: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 534947452c02010013
+
+No.     Time           Source                Destination           Protocol Length Info
+    245 22.449786      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 245: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 45474953600002
+
+No.     Time           Source                Destination           Protocol Length Info
+    246 22.449812      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 246: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    247 22.449854      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 247: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    248 22.450447      2.1.2                 host                  USB      34     URB_BULK in
+
+Frame 248: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 5349474500ab01
+
+No.     Time           Source                Destination           Protocol Length Info
+    249 22.450506      host                  2.1.1                 USB      34     URB_BULK out
+
+Frame 249: Packet, 34 bytes on wire (272 bits), 34 bytes captured (272 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data: 454749536414ec
+
+No.     Time           Source                Destination           Protocol Length Info
+    250 22.450530      2.1.1                 host                  USB      27     URB_BULK out
+
+Frame 250: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    251 22.450573      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 251: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    252 22.455474      2.1.2                 host                  USB      5147   URB_BULK in
+
+Frame 252: Packet, 5147 bytes on wire (41176 bits), 5147 bytes captured (41176 bits) on interface \\.\USBPcap2, id 0
+USB URB
+Leftover Capture Data […]: 5f625f646266625a60615e6065605d635b6663636461656764605c645f6664665e646364606761645d61646063635e6560626464626164635e655f5d66605f666161605e626164626667665f60626165645f64615e6261616665606163625d665e5c61656265625f61
+
+No.     Time           Source                Destination           Protocol Length Info
+    253 22.455487      host                  2.1.2                 USB      27     URB_BULK in
+
+Frame 253: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap2, id 0
+USB URB

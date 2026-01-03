@@ -1,0 +1,3 @@
+[submodule "open-fprintd"]
+	path = open-fprintd
+	url = https://github.com/AbbhinavJayaraman/open-fprintd.git
