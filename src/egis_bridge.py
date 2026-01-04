@@ -6,7 +6,7 @@ import egis_driver
 import fingerprint_matcher 
 import time
 import threading
-import egis_config # Loads your ENROLL_STAGES and MATCH_THRESHOLD
+import egis_config 
 
 # --- Configuration ---
 DEVICE_IFACE = 'io.github.uunicorn.Fprint.Device'
@@ -14,7 +14,6 @@ MANAGER_IFACE = 'net.reactivated.Fprint.Manager'
 MANAGER_OBJ = '/net/reactivated/Fprint/Manager'
 MANAGER_BUS = 'net.reactivated.Fprint'
 
-# Keeping storage local to avoid permission hell in /var/lib
 ENROLL_DIR = "./enrolled_prints"
 
 class EgisBridge(dbus.service.Object):
@@ -44,9 +43,8 @@ class EgisBridge(dbus.service.Object):
         except Exception as e:
             print(f"[BRIDGE] Failed to register: {e}")
 
-    # --- Thread Safety (Ported from Service) ---
+    # --- Thread Safety ---
     def _stop_scan(self):
-        """Stops any running scan and waits for the thread to die."""
         if self.scanning:
             print("[BRIDGE] Stopping active scan...")
             self.scanning = False
@@ -59,7 +57,6 @@ class EgisBridge(dbus.service.Object):
                 print("[BRIDGE] Thread stopped.")
 
     def _start_scan(self, target_func, args):
-        """Safely kills old thread before starting new one."""
         self._stop_scan()
         self.scanning = True
         self.scan_thread = threading.Thread(target=target_func, args=args)
@@ -70,6 +67,8 @@ class EgisBridge(dbus.service.Object):
     @dbus.service.method(DEVICE_IFACE, in_signature='ss', out_signature='')
     def VerifyStart(self, username, finger_name):
         print(f"[BRIDGE] Verify Requested for user: {username}")
+        try: self.driver._initialize_sensor()
+        except: pass
         target_finger = finger_name if finger_name else "right-index-finger"
         self._start_scan(self._scan_loop, ("verify", username, target_finger))
 
@@ -81,6 +80,13 @@ class EgisBridge(dbus.service.Object):
     @dbus.service.method(DEVICE_IFACE, in_signature='ss', out_signature='')
     def EnrollStart(self, username, finger_name):
         print(f"[BRIDGE] Enroll Requested for user: {username}")
+        self._stop_scan()
+        time.sleep(0.1)
+        try:
+            self.driver._initialize_sensor()
+        except Exception as e:
+            print(f"[BRIDGE] Warning: Sensor init failed: {e}")
+
         self.enroll_scans = [] 
         target_finger = finger_name if finger_name else "right-index-finger"
         self._start_scan(self._scan_loop, ("enroll", username, target_finger))
@@ -106,13 +112,11 @@ class EgisBridge(dbus.service.Object):
         print(f"[BRIDGE] Deleting prints for {username}")
         self.matcher.delete_user_fingers(username)
 
-    # --- Logic Core (The "Robust" Version) ---
+    # --- Logic Core ---
     
     def _wait_for_finger_release(self):
-        """Blocks until sensor is CLEAR for 2 consecutive frames."""
         print("[BRIDGE] Waiting for finger release...")
-        time.sleep(0.3) # Initial debounce
-        
+        time.sleep(0.3)
         consecutive_clears = 0
         while self.scanning:
             if self.driver.check_sensor_clear():
@@ -126,14 +130,11 @@ class EgisBridge(dbus.service.Object):
 
     def _scan_loop(self, mode, username, finger_name):
         print(f"[BRIDGE] Starting {mode} loop for {username} ({finger_name})...")
-        
-        # Initial lift check before we even start capturing
         self._wait_for_finger_release()
 
         while self.scanning:
             if not self.driver.check_sensor_clear():
                 print("[BRIDGE] Finger detected! Capturing...")
-                
                 img, contrast = self.driver.get_live_frame()
                 if img is None: continue 
 
@@ -144,7 +145,6 @@ class EgisBridge(dbus.service.Object):
                 elif mode == "verify":
                     self._handle_verify(img, username)
                 
-                # Force lift before next scan
                 if self.scanning:
                     self._wait_for_finger_release()
             
@@ -154,14 +154,14 @@ class EgisBridge(dbus.service.Object):
         self.enroll_scans.append(img)
         count = len(self.enroll_scans)
         
-        # Uses your new config file
         try: target = egis_config.ENROLL_STAGES
         except: target = 15
 
         print(f"[BRIDGE] Enroll Progress: {count}/{target}")
 
         if count < target:
-            self.EnrollStatus("enroll-stage-passed", False)
+            # THREAD SAFETY FIX: Send signal from main loop
+            GLib.idle_add(self.EnrollStatus, "enroll-stage-passed", False)
         else:
             unique_name = f"{username}_{finger_name}"
             print(f"[BRIDGE] Processing enrollment for {unique_name}...")
@@ -169,17 +169,18 @@ class EgisBridge(dbus.service.Object):
             
             if success:
                 print("[BRIDGE] Enrollment Successful!")
-                self.EnrollStatus("enroll-completed", True)
+                # THREAD SAFETY FIX
+                GLib.idle_add(self.EnrollStatus, "enroll-completed", True)
             else:
-                print("[BRIDGE] Enrollment Failed (Low quality?)")
-                self.EnrollStatus("enroll-failed", True)
+                print("[BRIDGE] Enrollment Failed")
+                # THREAD SAFETY FIX
+                GLib.idle_add(self.EnrollStatus, "enroll-failed", True)
                 
             self.scanning = False
 
     def _handle_verify(self, img, username):
         match_name, score = self.matcher.verify_finger(img)
         
-        # Uses your new config file
         try: min_score = egis_config.MATCH_THRESHOLD
         except: min_score = 15
 
@@ -187,35 +188,32 @@ class EgisBridge(dbus.service.Object):
             print(f"[BRIDGE] Best Match: {match_name} (Score: {score})")
             if match_name.startswith(username + "_"):
                 print("[BRIDGE] AUTHENTICATED!")
-                self.VerifyStatus("verify-match", True)
+                # THREAD SAFETY FIX
+                GLib.idle_add(self.VerifyStatus, "verify-match", True)
                 self.scanning = False
             else:
                 print(f"[BRIDGE] Wrong user! ({match_name})")
-                self.VerifyStatus("verify-no-match", False)
+                # THREAD SAFETY FIX
+                GLib.idle_add(self.VerifyStatus, "verify-no-match", False)
         else:
             print(f"[BRIDGE] Rejected. (Score: {score}/{min_score})")
-            self.VerifyStatus("verify-no-match", False)
+            # THREAD SAFETY FIX
+            GLib.idle_add(self.VerifyStatus, "verify-no-match", False)
 
     # --- Signals ---
     @dbus.service.signal(DEVICE_IFACE, signature='sb')
-    def VerifyStatus(self, result, done):
-        pass
+    def VerifyStatus(self, result, done): pass
 
     @dbus.service.signal(DEVICE_IFACE, signature='s')
-    def VerifyFingerSelected(self, finger):
-        pass 
+    def VerifyFingerSelected(self, finger): pass 
 
     @dbus.service.signal(DEVICE_IFACE, signature='sb')
-    def EnrollStatus(self, result, done):
-        pass
+    def EnrollStatus(self, result, done): pass
 
 if __name__ == '__main__':
     dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
     bus = dbus.SystemBus()
-    # We must claim a bus name so open-fprintd knows who we are
-    # Note: We must own the name defined in the PolicyKit file
     name = dbus.service.BusName("io.github.uunicorn.Fprint.Device.Egis", bus)
-    
     device = EgisBridge(bus)
     loop = GLib.MainLoop()
     loop.run()
