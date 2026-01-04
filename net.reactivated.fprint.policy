@@ -28,8 +28,8 @@
   </action>
   
   <action id="net.reactivated.fprint.manager.register">
-    <description>Register a fingerprint driver</description>
-    <message>System policy prevents registering new fingerprint drivers.</message>
+    <description>Administer Fingerprint Service</description>
+    <message>System policy prevents registering drivers or modifying service state.</message>
     <defaults>
       <allow_any>no</allow_any>
       <allow_inactive>no</allow_inactive>
