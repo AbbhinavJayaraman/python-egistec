@@ -197,8 +197,8 @@ class EgisBridge(dbus.service.Object):
                 GLib.idle_add(self.VerifyStatus, "verify-no-match", False)
         else:
             print(f"[BRIDGE] Rejected. (Score: {score}/{min_score})")
-            # THREAD SAFETY FIX
-            GLib.idle_add(self.VerifyStatus, "verify-no-match", False)
+            # Use 'verify-retry-scan' to suppress GDM 'Unknown Error' messages
+            GLib.idle_add(self.VerifyStatus, "verify-retry-scan", False)
 
     # --- Signals ---
     @dbus.service.signal(DEVICE_IFACE, signature='sb')
