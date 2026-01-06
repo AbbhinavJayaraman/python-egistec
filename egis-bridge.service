@@ -1,22 +1,22 @@
 [Unit]
 Description=Egis Fingerprint Bridge
-# This is critical: wait for the manager to start first
+# Ensure it waits for the manager and the actual hardware
 After=open-fprintd.service
 Requires=open-fprintd.service
+# Optional: Wait until the USB device is actually seen by the kernel
+BindTo=sys-subsystem-net-devices-usb.device 
 
 [Service]
 Type=simple
 User=root
 Group=root
-WorkingDirectory=/opt/egis-driver
-Environment="PYTHONPATH=/opt/egis-driver"
-
-# Run your bridge script
-ExecStart=/usr/bin/python3 -u ./egis_bridge.py
-
-# Aggressive restart policy because USB devices can be flaky
+# Ensure the python interpreter is explicitly used if the binary isn't a compiled wrapper
+ExecStart=/usr/bin/python3 -u /usr/bin/egis-bridge
+# Since the code uses ENROLL_DIR = "./enrolled_prints", it will crash if it 
+# doesn't know where "current" is. Point it to your state directory.
+WorkingDirectory=/var/lib/open-fprintd/egis
 Restart=always
-RestartSec=2
+RestartSec=3
 
 [Install]
 WantedBy=multi-user.target
