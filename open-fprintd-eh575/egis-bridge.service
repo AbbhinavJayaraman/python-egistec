@@ -1,6 +1,5 @@
 [Unit]
-Description=Egis Fingerprint Bridge
-# Critical: wait for the manager
+Description=Egis Fingerprint Bridge (Opt Install)
 After=open-fprintd.service
 Requires=open-fprintd.service
 
@@ -8,12 +7,10 @@ Requires=open-fprintd.service
 Type=simple
 User=root
 Group=root
-# Point to the executable in /usr/bin
-ExecStart=/usr/bin/egis-bridge
-# No Environment=PYTHONPATH needed (installed to site-packages)
-# No WorkingDirectory needed (code uses absolute paths now)
-
-# Aggressive restart policy for flaky USB
+# CRITICAL: Forces Python to look in /opt/egis-driver
+Environment="PYTHONPATH=/opt/egis-driver"
+WorkingDirectory=/opt/egis-driver
+ExecStart=/usr/bin/python3 -u ./egis-bridge
 Restart=always
 RestartSec=2
 

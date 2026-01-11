@@ -1,5 +1,5 @@
 [Unit]
-Description=Open Fprintd Manager
+Description=Open Fprintd Manager (Opt Install)
 After=dbus.service
 Wants=dbus.service
 
@@ -7,8 +7,10 @@ Wants=dbus.service
 Type=simple
 User=root
 Group=root
-# Point to the executable in /usr/bin
-ExecStart=/usr/bin/open-fprintd
+# CRITICAL: Forces Python to look in /opt/egis-driver
+Environment="PYTHONPATH=/opt/egis-driver"
+WorkingDirectory=/opt/egis-driver
+ExecStart=/usr/bin/python3 -u ./open-fprintd
 Restart=on-failure
 RestartSec=5
 
